@@ -1,8 +1,8 @@
-# Blazor Examples
+# ASP.NET Core Examples
 
-Examples for [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor).
+Examples for [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) web applications.
 
-![](https://img.shields.io/github/license/rickbeerendonk/blazor-examples.svg)
+![](https://img.shields.io/github/license/rickbeerendonk/aspnet-examples.svg)
 
 ## Run
 
@@ -14,13 +14,13 @@ Examples for [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor).
 
 ### Visual Studio Code
 
-- Open the blazor examples in Visual Studio Code
+- Open the examples in Visual Studio Code
 - In VSCode, open a file in the root of the example folder (where .csproj or .vbproj is located)
 - Use the build command. As a result the project will be started in watch mode and the browser will open.
 
 ## Docs
 
-- https://docs.microsoft.com/aspnet/core/blazor/
+- https://docs.microsoft.com/aspnet/core/
 
 ## Visual Studio Code Plugins
 
@@ -33,4 +33,4 @@ European Union Public Licence version 1.2
 
 ## Copyright
 
-Copyright © 2020-2021 Rick Beerendonk
+Copyright © 2021 Rick Beerendonk
