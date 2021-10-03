@@ -1,0 +1,1 @@
+FOR /d /r . %d in (bin,obj) DO @IF EXIST "%d" rm -rf "%d"
