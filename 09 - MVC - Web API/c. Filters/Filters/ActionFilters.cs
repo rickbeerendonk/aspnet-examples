@@ -2,17 +2,22 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace MvcWebApi_Filters.Filters;
 
-public class DemoActionFilterAttribute : ActionFilterAttribute
+public class DemoActionFilterAttribute : Attribute, IActionFilter
 {
-  public string Name { get; set; } = "";
+  private readonly string name;
 
-  public override void OnActionExecuting(ActionExecutingContext context)
+  public DemoActionFilterAttribute(string name)
   {
-    Console.WriteLine($"DemoActionFilter.OnActionExecuting: {Name}");
+    this.name = name;
   }
 
-  public override void OnActionExecuted(ActionExecutedContext context)
+  public void OnActionExecuting(ActionExecutingContext context)
   {
-    Console.WriteLine($"DemoActionFilter.OnActionExecuted: {Name}");
+    Console.WriteLine($"DemoActionFilter.OnActionExecuting: {name}");
+  }
+
+  public void OnActionExecuted(ActionExecutedContext context)
+  {
+    Console.WriteLine($"DemoActionFilter.OnActionExecuted: {name}");
   }
 }
