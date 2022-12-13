@@ -13,6 +13,6 @@ public class DemoExceptionFilterAttribute : Attribute, IExceptionFilter
 
   public void OnException(ExceptionContext context)
   {
-    Console.WriteLine($"DemoExceptionFilter.OnException: {name}");
+    Console.WriteLine($"DemoExceptionFilter.OnException: {name} (Exception: \"{context.Exception.Message}\")");
   }
 }
