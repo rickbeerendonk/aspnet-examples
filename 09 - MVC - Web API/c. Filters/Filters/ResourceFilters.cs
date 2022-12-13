@@ -13,11 +13,11 @@ public class DemoResourceFilterAttribute : Attribute, IResourceFilter
 
   public void OnResourceExecuting(ResourceExecutingContext context)
   {
-    Console.WriteLine($"DemoActionFilter.OnResourceExecuting: {name}");
+    Console.WriteLine($"DemoResourceFilter.OnResourceExecuting: {name}");
   }
 
   public void OnResourceExecuted(ResourceExecutedContext context)
   {
-    Console.WriteLine($"DemoActionFilter.OnResourceExecuted: {name}");
+    Console.WriteLine($"DemoResourceFilter.OnResourceExecuted: {name}");
   }
 }
