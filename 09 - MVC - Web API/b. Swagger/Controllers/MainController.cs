@@ -7,7 +7,7 @@ namespace MvcWebApi_Swagger.Controllers;
 public class MainController : ControllerBase
 {
   [HttpGet]
-  // 1. Use Swagger (200 is actually default)
+  // 4. Use Swagger (200 is actually default)
   [ProducesResponseType(StatusCodes.Status200OK)]
   public ActionResult<IEnumerable<string>> Get()
   {
@@ -15,7 +15,7 @@ public class MainController : ControllerBase
   }
 
   [HttpPost]
-  // 1. Use Swagger
+  // 5. Use Swagger
   [ProducesResponseType(StatusCodes.Status400BadRequest)]
   public IActionResult Post()
   {

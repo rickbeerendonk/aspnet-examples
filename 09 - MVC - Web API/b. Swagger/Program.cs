@@ -2,13 +2,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// 1. Use Swagger
+// 2. Use Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// 2. Use Swagger
+// 3. Use Swagger
 if (app.Environment.IsDevelopment())
 {
   app.UseSwagger();
