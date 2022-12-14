@@ -6,7 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'simple' " />
   <ItemGroup>
     <!-- 1. Use Swagger-->
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
