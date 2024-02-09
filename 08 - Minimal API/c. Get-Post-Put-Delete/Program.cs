@@ -1,3 +1,6 @@
+// European Union Public License version 1.2
+// Copyright © 2022 Rick Beerendonk
+
 using Microsoft.AspNetCore.Http.HttpResults;
 
 var builder = WebApplication.CreateBuilder(args);
