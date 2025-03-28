@@ -1,3 +1,6 @@
+// European Union Public License version 1.2
+// Copyright © 2025 Rick Beerendonk
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,15 +15,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
-
 string[] technologies = ["ASP.NET Core", "Visual Basic", "C#", "F#", "Q#", "Entity Framework", "SignalR"];
 
-app.MapGet("/technologies", () =>
-{
-    
-    return technologies;
-})
-.WithName("GetTechnologies");
+app.MapGet("/technologies", () => technologies).WithName("GetTechnologies");
 
 app.Run();
