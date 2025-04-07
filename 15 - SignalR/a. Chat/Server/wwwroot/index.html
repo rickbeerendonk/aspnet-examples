@@ -19,10 +19,10 @@
     </script>
 
     <script type="module">
-      import * as signalR from "https://esm.sh/@microsoft/signalr";
+        import { HubConnectionBuilder } from "https://esm.sh/@microsoft/signalr";
 
       // Create and configure the SignalR connection
-      const connection = new signalR.HubConnectionBuilder()
+      const connection = new HubConnectionBuilder()
         .withUrl("/chat")
         .build();
 
