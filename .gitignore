@@ -7,7 +7,6 @@
 **/node_modules
 
 *.suo
-*.user
 *.userosscache
 *.sln.docstates
 *.userprefs
